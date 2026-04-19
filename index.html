@@ -1,84 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
-  <title>Local Co-Op Hub</title>
+  <title>Co-Op Hub Store</title>
   <style>
     body {
+      font-family: Arial;
+      background: #0e0e0e;
+      color: white;
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f0f0f;
-      color: #ffffff;
     }
 
     header {
       text-align: center;
-      padding: 40px 20px;
-      background: #151515;
+      padding: 30px;
+      background: #181818;
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 32px;
-    }
-
-    header p {
-      color: #aaa;
-      margin-top: 10px;
-    }
-
-    .container {
+    .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-      padding: 30px;
+      gap: 15px;
+      padding: 20px;
     }
 
     .card {
-      background: #1c1c1c;
-      border-radius: 12px;
-      padding: 20px;
-      transition: 0.2s;
+      background: #1f1f1f;
+      border-radius: 10px;
+      padding: 15px;
     }
 
-    .card:hover {
-      background: #262626;
-      transform: scale(1.02);
-    }
-
-    .card h2 {
+    .card h3 {
       margin-top: 0;
-      font-size: 20px;
       color: #00e676;
     }
 
-    .card p {
-      color: #bbb;
-      font-size: 14px;
-      margin-bottom: 15px;
-    }
-
-    a {
+    .btn {
       display: block;
       margin: 8px 0;
       padding: 10px;
       background: #00c853;
       color: white;
       text-decoration: none;
-      border-radius: 6px;
-      font-size: 14px;
       text-align: center;
+      border-radius: 6px;
     }
 
-    a:hover {
+    .btn:hover {
       background: #00e676;
     }
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #666;
-      font-size: 12px;
+    .secondary {
+      background: #333;
     }
   </style>
 </head>
@@ -86,50 +59,53 @@
 <body>
 
 <header>
-  <h1>🎮 Local Co-Op Hub</h1>
-  <p>Split-screen • Offline Multiplayer • Game Optimization Tools</p>
+  <h1>🎮 Co-Op Hub Store</h1>
+  <p>Games • Tools • Scripts • Optimization Packs</p>
 </header>
 
-<div class="container">
+<div class="grid">
 
-  <!-- GAME MODDING -->
+  <!-- GAMES -->
   <div class="card">
-    <h2>🎮 Game Modding</h2>
-    <p>Enable local multiplayer in games that don’t support it natively.</p>
-    <a href="#">Open Modding Guides</a>
-    <a href="#">Download Setups</a>
+    <h3>🎮 Games</h3>
+    <p>Modded setups for local co-op gameplay</p>
+    <a class="btn" href="ACORTADOR_GAME">Download Game</a>
+    <a class="btn secondary" href="MIRROR_GAME">Mirror</a>
   </div>
 
-  <!-- TOOLS -->
+  <!-- PROGRAMS -->
   <div class="card">
-    <h2>⚙️ Tools & Frameworks</h2>
-    <p>Nucleus Co-Op and other tools for split-screen and LAN emulation.</p>
-    <a href="#">Nucleus Co-Op</a>
-    <a href="#">Compatibility Tools</a>
+    <h3>⚙️ Programs</h3>
+    <p>Utilities and supporting software</p>
+    <a class="btn" href="ACORTADOR_PROGRAM">Download Program</a>
+    <a class="btn secondary" href="MIRROR_PROGRAM">Mirror</a>
   </div>
 
-  <!-- OPTIMIZATION -->
+  <!-- NUCLEUS -->
   <div class="card">
-    <h2>🚀 System Optimization</h2>
-    <p>Improve FPS, reduce lag and optimize Windows for gaming.</p>
-    <a href="#">Windows Tweaks</a>
-    <a href="#">Performance Packs</a>
+    <h3>🧩 Nucleus Co-Op</h3>
+    <p>Custom scripts and split-screen setups</p>
+    <a class="btn" href="ACORTADOR_NUCLEUS">Download Setup</a>
+    <a class="btn secondary" href="MIRROR_NUCLEUS">Mirror</a>
   </div>
 
-  <!-- DOWNLOAD CENTER -->
+  <!-- SCRIPTS -->
   <div class="card">
-    <h2>📦 Download Center</h2>
-    <p>Main access to files, mirrors and fast download links.</p>
-    <a href="ACORTADOR_LINK">Main Download</a>
-    <a href="GOFILE_LINK">Mirror 1</a>
-    <a href="PIXELDRAIN_LINK">Mirror 2</a>
+    <h3>💻 Scripts</h3>
+    <p>Automation & configuration tools</p>
+    <a class="btn" href="ACORTADOR_SCRIPTS">Download Scripts</a>
+    <a class="btn secondary" href="MIRROR_SCRIPTS">Mirror</a>
+  </div>
+
+  <!-- OS / OPTIMIZATION -->
+  <div class="card">
+    <h3>🖥️ OS & Optimization</h3>
+    <p>Performance tweaks and system setups</p>
+    <a class="btn" href="ACORTADOR_OS">Download Pack</a>
+    <a class="btn secondary" href="MIRROR_OS">Mirror</a>
   </div>
 
 </div>
-
-<footer>
-  Local Co-Op Hub • Gaming Tools & Optimization System
-</footer>
 
 </body>
 </html>
