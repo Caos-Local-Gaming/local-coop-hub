@@ -1,67 +1,135 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Local Co-Op Hub</title>
   <style>
     body {
-      font-family: Arial;
+      margin: 0;
+      font-family: Arial, sans-serif;
       background: #0f0f0f;
-      color: white;
-      text-align: center;
-      padding: 20px;
+      color: #ffffff;
     }
 
-    .grid {
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: #151515;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    header p {
+      color: #aaa;
+      margin-top: 10px;
+    }
+
+    .container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 15px;
-      margin-top: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      padding: 30px;
     }
 
     .card {
-      background: #1e1e1e;
-      padding: 15px;
-      border-radius: 10px;
-      cursor: pointer;
+      background: #1c1c1c;
+      border-radius: 12px;
+      padding: 20px;
       transition: 0.2s;
     }
 
     .card:hover {
-      background: #2a2a2a;
+      background: #262626;
+      transform: scale(1.02);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      font-size: 20px;
+      color: #00e676;
+    }
+
+    .card p {
+      color: #bbb;
+      font-size: 14px;
+      margin-bottom: 15px;
     }
 
     a {
+      display: block;
+      margin: 8px 0;
+      padding: 10px;
+      background: #00c853;
       color: white;
       text-decoration: none;
+      border-radius: 6px;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    a:hover {
+      background: #00e676;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #666;
+      font-size: 12px;
     }
   </style>
 </head>
 
 <body>
 
-<h1>🎮 Local Co-Op Hub</h1>
-<p>Split-screen & offline multiplayer tools</p>
+<header>
+  <h1>🎮 Local Co-Op Hub</h1>
+  <p>Split-screen • Offline Multiplayer • Game Optimization Tools</p>
+</header>
 
-<div class="grid">
+<div class="container">
 
+  <!-- GAME MODDING -->
   <div class="card">
-    <h3>🎮 Games</h3>
-    <a href="#">Diablo II Setup</a><br>
-    <a href="#">GTA V Co-Op</a>
+    <h2>🎮 Game Modding</h2>
+    <p>Enable local multiplayer in games that don’t support it natively.</p>
+    <a href="#">Open Modding Guides</a>
+    <a href="#">Download Setups</a>
   </div>
 
+  <!-- TOOLS -->
   <div class="card">
-    <h3>⚙️ Tools</h3>
-    <a href="#">Nucleus Co-Op</a><br>
-    <a href="#">Optimization Pack</a>
+    <h2>⚙️ Tools & Frameworks</h2>
+    <p>Nucleus Co-Op and other tools for split-screen and LAN emulation.</p>
+    <a href="#">Nucleus Co-Op</a>
+    <a href="#">Compatibility Tools</a>
   </div>
 
+  <!-- OPTIMIZATION -->
   <div class="card">
-    <h3>📦 Downloads</h3>
+    <h2>🚀 System Optimization</h2>
+    <p>Improve FPS, reduce lag and optimize Windows for gaming.</p>
+    <a href="#">Windows Tweaks</a>
+    <a href="#">Performance Packs</a>
+  </div>
+
+  <!-- DOWNLOAD CENTER -->
+  <div class="card">
+    <h2>📦 Download Center</h2>
+    <p>Main access to files, mirrors and fast download links.</p>
     <a href="ACORTADOR_LINK">Main Download</a>
+    <a href="GOFILE_LINK">Mirror 1</a>
+    <a href="PIXELDRAIN_LINK">Mirror 2</a>
   </div>
 
 </div>
+
+<footer>
+  Local Co-Op Hub • Gaming Tools & Optimization System
+</footer>
 
 </body>
 </html>
