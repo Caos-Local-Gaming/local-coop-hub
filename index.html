@@ -1,37 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
   <title>Local Co-Op Hub</title>
   <style>
     body {
-      background: #0f0f0f;
-      color: #fff;
       font-family: Arial;
+      background: #0f0f0f;
+      color: white;
       text-align: center;
-      padding: 30px;
+      padding: 20px;
     }
 
-    .box {
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .card {
       background: #1e1e1e;
-      margin: 20px auto;
-      padding: 20px;
-      max-width: 600px;
+      padding: 15px;
       border-radius: 10px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .card:hover {
+      background: #2a2a2a;
     }
 
     a {
-      display: block;
-      margin: 10px 0;
-      padding: 12px;
-      background: #00c853;
       color: white;
       text-decoration: none;
-      border-radius: 6px;
-    }
-
-    a:hover {
-      background: #00e676;
     }
   </style>
 </head>
@@ -39,19 +40,27 @@
 <body>
 
 <h1>🎮 Local Co-Op Hub</h1>
+<p>Split-screen & offline multiplayer tools</p>
 
-<div class="box">
-  <h2>Download Links</h2>
+<div class="grid">
 
-  <a href="LINK_ACORTADOR" target="_blank">🔥 Download (Fast Access)</a>
-  <a href="LINK_GOFILE" target="_blank">Mirror 1 - GoFile</a>
-  <a href="LINK_PIXELDRAIN" target="_blank">Mirror 2 - Pixeldrain</a>
-  <a href="LINK_CATBOX" target="_blank">Mirror 3 - Catbox</a>
-</div>
+  <div class="card">
+    <h3>🎮 Games</h3>
+    <a href="#">Diablo II Setup</a><br>
+    <a href="#">GTA V Co-Op</a>
+  </div>
 
-<div class="box">
-  <h2>⚠️ Info</h2>
-  <p>If one link fails, try another mirror.</p>
+  <div class="card">
+    <h3>⚙️ Tools</h3>
+    <a href="#">Nucleus Co-Op</a><br>
+    <a href="#">Optimization Pack</a>
+  </div>
+
+  <div class="card">
+    <h3>📦 Downloads</h3>
+    <a href="ACORTADOR_LINK">Main Download</a>
+  </div>
+
 </div>
 
 </body>
